@@ -329,6 +329,24 @@
   </div>
 
   <audio id="bg-music" src="music/lagu.mp3" autoplay loop hidden></audio>
+
+  <script>
+    // Musik tetap bisa play setelah user interaksi
+    window.addEventListener('click', () => {
+      const music = document.getElementById('bg-music');
+      if (music.paused) music.play();
+    });
+
+    // Tombol muncul setelah scroll ke bawah 200px
+    window.addEventListener('scroll', () => {
+      const buttonWrapper = document.getElementById('btn-wrapper');
+      if (window.scrollY > 200) {
+        buttonWrapper.classList.add('show');
+      } else {
+        buttonWrapper.classList.remove('show');
+      }
+    });
+  </script>
       
 </body>
 
