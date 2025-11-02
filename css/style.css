@@ -1215,7 +1215,7 @@ body {
 
 .button-wrapper {
   position: absolute;
-  top: 79vh;
+  top: 879vh;
   width: 100%;
   display: flex;
   justify-content: right;
@@ -1227,7 +1227,7 @@ body {
   top: 87vh;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: left;
   align-items: center;
 }
 
